@@ -49,7 +49,7 @@ def main() -> None:
 
     # 2. 流式输出（逐 token 返回，适合聊天界面）
     print("[stream] ", end="")
-    for chunk in model.stream("写一首关于春天的五言绝句"):
+    for chunk in model.stream("写一首关于商丘的诗词"):
         print(chunk.content, end="", flush=True)
     print()
 
